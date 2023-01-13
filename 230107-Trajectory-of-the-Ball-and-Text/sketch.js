@@ -7,6 +7,8 @@ let x = 50, y = 50;
 let vx = 3, vy = 3;
 p = 0.9
 
+let txt = "Hello";
+
 function draw() {
 	//background(100);
 	ellipse(x, y, 50);
@@ -17,4 +19,7 @@ function draw() {
 		vy = -vy * p; //ball bounce
 		y = height; //Avoid p is too small to cause the ball stick at the bottom.
 	}
+
+	text(txt, x+100, y);
+	txt = txt + ".";
 }
