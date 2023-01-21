@@ -3,7 +3,7 @@ function setup() {
 	background(0);
     noStroke();
     for (let x = 0; x < width; x += 55){
-        for(let y = 0; y < innerHeight; y += 55){
+        for (let y = 0; y < innerHeight; y += 55){
             strokeWeight(5);
             stroke(random(200, 255), random(255), random(255));
             noFill();
